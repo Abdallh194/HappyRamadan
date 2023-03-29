@@ -1,0 +1,16 @@
+footer {
+  direction: ltr;
+  text-align: center;
+  padding: 10px 0;
+  .name {
+    color: $purp-color;
+    font-weight: bold;
+  }
+  a {
+    margin: 0px 8px;
+    color: black;
+  }
+  .social {
+    margin-top: 8px;
+  }
+}

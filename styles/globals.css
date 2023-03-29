@@ -1,0 +1,437 @@
+@import "bootstrap/dist/css/bootstrap.css";
+@import url("https://fonts.googleapis.com/css2?family=Changa:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo&display=swap");
+body {
+  overflow-x: hidden;
+  direction: rtl;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+* {
+  font-family: "Cairo";
+}
+
+.hadle-Padding-margin-Global {
+  padding: 40px 0;
+  margin-top: 50px;
+}
+
+.navbar {
+  background-color: white !important;
+}
+.navbar .logo {
+  font-family: "Changa";
+  font-size: 32px;
+  color: black;
+  padding: 10px 0;
+}
+.navbar .links a {
+  margin: 0 10px;
+  color: #333;
+}
+@media (max-width: 992px) {
+  .navbar .logo {
+    font-size: 25px;
+  }
+}
+
+.homePage {
+  position: relative;
+  background: url("img/home-bg.jpg");
+  height: 650px;
+  background-size: cover;
+  background-position-y: 40%;
+}
+.homePage .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  background: linear-gradient(90deg, rgba(251, 190, 5, 0.8) 0%, rgba(121, 9, 102, 0.8) 57%, rgba(162, 0, 255, 0.8) 100%);
+}
+.homePage .content {
+  padding: 40px 0;
+}
+.homePage .txt-box {
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.homePage .txt-box .head {
+  font-size: 85px;
+  font-family: "Changa";
+  font-weight: bold;
+  line-height: 1.15;
+}
+.homePage .txt-box .desc {
+  padding: 10px 0;
+  margin-top: 15px;
+  font-size: 15px;
+}
+.homePage .img-box .img-fluid {
+  width: 81%;
+  display: block;
+  margin: auto;
+}
+@media (max-width: 1200px) {
+  .homePage .txt-box .head {
+    font-size: 60px;
+  }
+  .homePage .img-box .img-fluid {
+    width: 100%;
+  }
+}
+@media (max-width: 992px) {
+  .homePage {
+    height: 450px;
+  }
+  .homePage .txt-box .head {
+    font-size: 44px;
+  }
+}
+@media (max-width: 767px) {
+  .homePage {
+    height: 960px;
+    background-position-x: 54%;
+  }
+  .homePage .txt-box {
+    text-align: center;
+  }
+  .homePage .txt-box .head {
+    font-size: 48px;
+  }
+  .homePage .txt-box .desc div {
+    padding: 9px 0;
+  }
+}
+@media (max-width: 575px) {
+  .homePage {
+    height: 875px;
+  }
+  .homePage .img-box .img-fluid {
+    margin-top: 25px;
+  }
+}
+
+.About {
+  position: relative;
+}
+.About .head {
+  font-family: "Changa";
+  font-weight: bold;
+  font-size: 30px;
+  color: #834496;
+  font-size: 40px;
+  z-index: 1;
+  position: relative;
+}
+.About .head::before {
+  position: absolute;
+  content: "";
+  right: -4px;
+  width: 299px;
+  height: 13px;
+  bottom: 7px;
+  z-index: -1;
+  background-color: #88fbfd;
+}
+.About .desc {
+  padding: 10px 0;
+}
+.About .more {
+  border: 2px solid #88fbfd;
+  margin: 20px 0;
+  width: 170px;
+  text-align: center;
+  padding: 10px 0;
+  color: #834496;
+  font-size: 21px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.About .more:hover {
+  background-color: #88fbfd;
+  color: black;
+}
+.About .img-box .img-fluid {
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+  box-shadow: #88fbfd 0px 30px 60px -12px inset, #88fbfd 0px 18px 36px -18px inset;
+}
+@media (max-width: 1200px) {
+  .About .desc {
+    font-size: 13px;
+  }
+}
+@media (max-width: 757px) {
+  .About .desc {
+    font-size: 16px;
+  }
+}
+
+.Quesion {
+  color: white;
+  background: linear-gradient(90deg, rgb(251, 190, 5) 0%, rgb(218, 29, 186) 57%, rgb(162, 0, 255) 100%);
+}
+.Quesion .head {
+  text-align: center;
+  font-size: 40px;
+}
+.Quesion .icon {
+  border: 2px solid white;
+  box-shadow: 4px 4px 0px white;
+  padding: 15px;
+  width: -moz-fit-content;
+  width: fit-content;
+  transform: rotate(45deg);
+  margin: auto;
+}
+.Quesion svg {
+  transform: rotate(-45deg);
+}
+.Quesion .header {
+  font-weight: bold;
+  font-size: 30px;
+  padding: 10px 0;
+  margin-top: 17px;
+}
+.Quesion .desc {
+  color: rgba(255, 255, 255, 0.7803921569);
+}
+.Quesion .box {
+  text-align: center;
+  margin-top: 90px;
+}
+.Quesion .cont_02 {
+  margin-top: 50px;
+}
+.Quesion .row {
+  align-items: center;
+}
+.Quesion .img {
+  background-color: white;
+  box-shadow: 8px 8px 0px black;
+  transition: 0.4s;
+  transform: rotate(45deg);
+  padding: 20px;
+  width: 75%;
+  margin: auto;
+}
+.Quesion .img:hover {
+  box-shadow: -8px -8px 0px black;
+}
+.Quesion .img img {
+  transform: rotate(-45deg);
+}
+@media (max-width: 767px) {
+  .Quesion .quran {
+    margin: 115px 0 49px 0;
+  }
+}
+@media (max-width: 575px) {
+  .Quesion {
+    margin-top: 0;
+  }
+  .Quesion .quran {
+    width: 60%;
+    margin: auto;
+    margin-top: 78px;
+    margin-bottom: 20px;
+  }
+}
+
+.Ques-text .container {
+  max-width: 1200px;
+}
+.Ques-text .head {
+  font-size: 28px;
+  font-weight: bold;
+  font-family: "Changa";
+}
+.Ques-text .desc {
+  margin-top: 20px;
+  font-size: 19px;
+}
+.Ques-text .q {
+  font-weight: bold;
+  color: #834496;
+  margin-top: 12px;
+  font-size: 20px;
+}
+.Ques-text .show {
+  background: linear-gradient(90deg, rgb(251, 190, 5) 0%, rgb(218, 29, 186) 57%, rgb(162, 0, 255) 100%);
+  color: white;
+  width: 150px;
+  padding: 10px 0;
+  text-align: center;
+  margin: 5px 0;
+  cursor: pointer;
+  display: inline-block;
+}
+.Ques-text span {
+  font-weight: bold;
+  text-decoration: underline;
+  transition: 0.4s;
+}
+.Ques-text .content {
+  width: 80%;
+  margin: auto;
+  border: 20px solid #834496;
+  padding: 33px;
+  font-size: 21px;
+}
+.Ques-text .allQ {
+  width: 700px;
+  margin: auto;
+  margin-top: 50px;
+}
+.Ques-text .allQ .header {
+  margin-top: 13px;
+  font-size: 20px;
+  padding: 5px 0;
+  font-weight: bold;
+}
+.Ques-text .allQ .form-control {
+  margin: 5px 0;
+  border-radius: 0px;
+  width: 93%;
+  display: inline-block;
+}
+.Ques-text .allQ .true {
+  color: #24c60d;
+}
+.Ques-text .allQ .wrong {
+  color: red;
+}
+.Ques-text .allQ .true,
+.Ques-text .allQ .wrong {
+  margin: 0px 5px;
+}
+.Ques-text .allQ .submit {
+  width: 200px;
+  margin: 15px 0;
+  background: linear-gradient(90deg, rgb(251, 190, 5) 0%, rgb(218, 29, 186) 57%, rgb(162, 0, 255) 100%);
+  color: white;
+}
+@media (max-width: 1200px) {
+  .Ques-text .content {
+    font-size: 19px;
+  }
+}
+@media (max-width: 992px) {
+  .Ques-text .content {
+    width: 100%;
+  }
+  .Ques-text .q {
+    font-size: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .Ques-text .img {
+    margin-top: 30px;
+  }
+  .Ques-text .allQ .form-control {
+    width: 91%;
+  }
+  .Ques-text .allQ .header {
+    font-size: 17px;
+  }
+  .Ques-text .allQ .submit {
+    width: 100%;
+    margin: 20px auto;
+  }
+}
+
+.Times .head {
+  text-align: center;
+  padding: 15px 0;
+  font-size: 25px;
+  font-weight: bold;
+}
+.Times Table td {
+  direction: ltr;
+  text-align: right;
+}
+
+.HappyRamd {
+  background: linear-gradient(90deg, rgb(251, 190, 5) 0%, rgb(218, 29, 186) 57%, rgb(162, 0, 255) 100%);
+  text-align: center;
+}
+.HappyRamd .head {
+  font-size: 31px;
+  color: white;
+  font-weight: bold;
+}
+.HappyRamd .box {
+  margin: auto;
+  margin-top: 50px;
+  height: 470px;
+  background-color: white;
+  width: calc(25% - 20px);
+  padding: 30px;
+}
+.HappyRamd .box img {
+  width: 100%;
+}
+.HappyRamd .box .header {
+  font-weight: bold;
+  margin-top: 8px;
+  padding: 10px 0;
+  color: #834496;
+  font-size: 18px;
+}
+.HappyRamd .box .desc {
+  font-size: 14px;
+}
+.HappyRamd .more {
+  background-color: white;
+  width: 150px;
+  padding: 10px 0;
+  text-align: center;
+  margin: 20px auto;
+  margin-top: 40px;
+  cursor: pointer;
+  color: #834496;
+}
+@media (max-width: 992px) {
+  .HappyRamd .box {
+    width: 48%;
+    height: 490px;
+    margin-top: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .HappyRamd .box {
+    height: 450px;
+  }
+}
+@media (max-width: 575px) {
+  .HappyRamd .box {
+    width: 93%;
+    height: auto;
+    margin-top: 20px;
+  }
+}
+
+footer {
+  direction: ltr;
+  text-align: center;
+  padding: 10px 0;
+}
+footer .name {
+  color: #834496;
+  font-weight: bold;
+}
+footer a {
+  margin: 0px 8px;
+  color: black;
+}
+footer .social {
+  margin-top: 8px;
+}/*# sourceMappingURL=globals.css.map */

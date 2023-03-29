@@ -1,0 +1,29 @@
+@import "bootstrap/dist/css/bootstrap.css"; //bootstrap
+@import url("https://fonts.googleapis.com/css2?family=Changa:wght@600&display=swap"); //header font
+@import url("https://fonts.googleapis.com/css2?family=Cairo&display=swap"); //main font
+$main-font: "Cairo";
+$header-font: "Changa";
+$aqua-color: #88fbfd;
+$purp-color: #834496;
+body {
+  overflow-x: hidden;
+  direction: rtl;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+* {
+  font-family: $main-font;
+}
+.hadle-Padding-margin-Global {
+  padding: 40px 0;
+  margin-top: 50px;
+}
+@import "Assests/Navbar.module";
+@import "Assests/HomePage.module";
+@import "Assests/About.moule";
+@import "Assests/Quesion.module";
+@import "Assests/Times.module";
+@import "Assests/HappyRamd.module";
+@import "Assests/Footer.module";

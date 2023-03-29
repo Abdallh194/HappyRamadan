@@ -1,0 +1,188 @@
+.Quesion {
+  color: white;
+  background: linear-gradient(
+    90deg,
+    rgba(251, 190, 5, 1) 0%,
+    rgb(218, 29, 186) 57%,
+    rgba(162, 0, 255, 1) 100%
+  );
+  .head {
+    text-align: center;
+    font-size: 40px;
+  }
+  .icon {
+    border: 2px solid white;
+    box-shadow: 4px 4px 0px white;
+    padding: 15px;
+    width: fit-content;
+    transform: rotate(45deg);
+    margin: auto;
+  }
+  svg {
+    transform: rotate(-45deg);
+  }
+  .header {
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px 0;
+    margin-top: 17px;
+  }
+  .desc {
+    color: #ffffffc7;
+  }
+  .box {
+    text-align: center;
+    margin-top: 90px;
+  }
+  .cont_02 {
+    margin-top: 50px;
+  }
+  .row {
+    align-items: center;
+  }
+  .img {
+    background-color: white;
+    box-shadow: 8px 8px 0px black;
+    transition: 0.4s;
+    transform: rotate(45deg);
+    padding: 20px;
+    width: 75%;
+    margin: auto;
+    &:hover {
+      box-shadow: -8px -8px 0px black;
+    }
+    img {
+      transform: rotate(-45deg);
+    }
+  }
+
+  @media (max-width: 767px) {
+    .quran {
+      margin: 115px 0 49px 0;
+    }
+  }
+  @media (max-width: 575px) {
+    margin-top: 0;
+    .quran {
+      width: 60%;
+      margin: auto;
+      margin-top: 78px;
+      margin-bottom: 20px;
+    }
+  }
+}
+.Ques-text {
+  .container {
+    max-width: 1200px;
+  }
+  .head {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: $header-font;
+  }
+  .desc {
+    margin-top: 20px;
+    font-size: 19px;
+  }
+  .q {
+    font-weight: bold;
+    color: $purp-color;
+    margin-top: 12px;
+    font-size: 20px;
+  }
+  .show {
+    background: linear-gradient(
+      90deg,
+      rgba(251, 190, 5, 1) 0%,
+      rgb(218, 29, 186) 57%,
+      rgba(162, 0, 255, 1) 100%
+    );
+    color: white;
+    width: 150px;
+    padding: 10px 0;
+    text-align: center;
+    margin: 5px 0;
+    cursor: pointer;
+    display: inline-block;
+  }
+  span {
+    font-weight: bold;
+    text-decoration: underline;
+    transition: 0.4s;
+  }
+  .content {
+    width: 80%;
+    margin: auto;
+    border: 20px solid $purp-color;
+    padding: 33px;
+    font-size: 21px;
+  }
+  .allQ {
+    width: 700px;
+    margin: auto;
+    margin-top: 50px;
+    .header {
+      margin-top: 13px;
+      font-size: 20px;
+      padding: 5px 0;
+      font-weight: bold;
+    }
+    .form-control {
+      margin: 5px 0;
+      border-radius: 0px;
+      width: 93%;
+      display: inline-block;
+    }
+    .true {
+      color: #24c60d;
+    }
+    .wrong {
+      color: red;
+    }
+    .true,
+    .wrong {
+      margin: 0px 5px;
+    }
+    .submit {
+      width: 200px;
+      margin: 15px 0;
+      background: linear-gradient(
+        90deg,
+        rgba(251, 190, 5, 1) 0%,
+        rgb(218, 29, 186) 57%,
+        rgba(162, 0, 255, 1) 100%
+      );
+      color: white;
+    }
+  }
+  @media (max-width: 1200px) {
+    .content {
+      font-size: 19px;
+    }
+  }
+  @media (max-width: 992px) {
+    .content {
+      width: 100%;
+    }
+    .q {
+      font-size: 15px;
+    }
+  }
+  @media (max-width: 767px) {
+    .img {
+      margin-top: 30px;
+    }
+    .allQ {
+      .form-control {
+        width: 91%;
+      }
+      .header {
+        font-size: 17px;
+      }
+      .submit {
+        width: 100%;
+        margin: 20px auto;
+      }
+    }
+  }
+}
